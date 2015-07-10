@@ -15,11 +15,17 @@
 
 ####Usage
 
-   To get a remote request 
+   To make a GET request
 
-     RH.get("https://restcountries.eu/rest/v1/name/philippines", function(res){
-    	console.log(res)
-     })
+     RH.get("https://restcountries.eu/rest/v1/name/philippines", function (res) {
+         console.log(res);
+     });
+    
+	To make a POST request
+	
+	 RH.post("/rest/posting",{name:John,age:25}, function (res) {
+    	console.log(res);
+     });
 
 ####Complete Example Code
 
