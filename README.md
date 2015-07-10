@@ -21,7 +21,7 @@
          console.log(res);
      });
     
-	To make a POST request
+   To make a POST request
 	
 	 RH.post("/rest/posting",{name:John,age:25}, function (res) {
     	console.log(res);
