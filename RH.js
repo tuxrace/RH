@@ -9,9 +9,9 @@
     var serialize_json = function (json_str) {
         var s = "";
         var b = JSON.parse(JSON.stringify(json_str));
-        b.forEach(function (k, v) {
-            s += k + "=" + v + "&";
-        });
+        Object.keys(b).map( function (k) {			
+            s += k + "=" + b[k] + "&";
+        });		
         return s.substr(0, s.length - 1);
     };
     var RH = {
@@ -31,6 +31,7 @@
                 }
             };
             xmlhttp.open("POST", url, true);
+			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
             xmlhttp.send(serialize_json(json_data));
         }
     };
