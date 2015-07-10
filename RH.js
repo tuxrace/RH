@@ -9,8 +9,8 @@
     var serialize_json = function (json_str) {
         var s = "";
         var b = JSON.parse(JSON.stringify(json_str));
-        b.forEach(function (x) {
-            s += x + "=" + b[x] + "&";
+        b.forEach(function (k, v) {
+            s += k + "=" + v + "&";
         });
         return s.substr(0, s.length - 1);
     };
