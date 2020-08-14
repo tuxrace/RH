@@ -1,4 +1,4 @@
-#RH
+# RH
 ### Really simple Http library
       _____  _    _ 
      |  __ \| |  | |
@@ -7,13 +7,13 @@
      | | \ \| |  | |
      |_|  \_\_|  |_|
 
-####Install
+## Install
 
    Download the [RH.js](https://raw.githubusercontent.com/tuxrace/RH/master/RH.js "RH.js") file, then add in script src, then we are good to go
 
      <script type="text/javascript" src="RH.js"></script>
 
-####Usage
+## Usage
 
    To make a GET request
 
@@ -27,7 +27,7 @@
     	console.log(res);
      });
 
-####Complete Example Code
+## Complete Example Code
 
      <!doctype html>
 	 <html>
@@ -46,6 +46,6 @@
 		</body>
 	 </html>
 
-####Author
+## Author
 
      Gerard Banasig
